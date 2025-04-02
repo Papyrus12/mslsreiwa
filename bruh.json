@@ -53,8 +53,7 @@ async function main() {
     const VERSION = "1.0.0";
     const difficulties = ["Basic", "Advanced", "Expert", "Master", "Ultima"];
     const engMode = location.hostname === "chun.missless.net";
-    let baseUrl = engMode ? "https://chun.missless.net/home/" : "https://new.chunithm-net.com/chuni-mobile/html/";
-    baseUrl += "mobile/";
+    let baseUrl = engMode ? "https://chun.missless.net/" : "https://new.chunithm-net.com/chuni-mobile/html/";
     const homeUrl = baseUrl + "home/";
     const musicUrl = baseUrl + "record/musicGenre/";
     const sendUrl = musicUrl + "send";
@@ -65,7 +64,7 @@ async function main() {
     const playerData = {};
 
     // location check
-    if (location.hostname !== "new.chunithm-net.com" && location.hostname !== "chunithm-net-eng.com") {
+    if (location.hostname !== "chun.missless.net" && location.hostname !== "chun.missless.net") {
         alert("ăăŽăăźă¸ă§ăŻĺŽčĄă§ăăžăăă You can't run this script on this page.");
         return;
     }
